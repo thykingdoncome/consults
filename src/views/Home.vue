@@ -86,7 +86,7 @@
           </div>
 
           <!-- product section end -->
-          
+
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@ export default {
     };
   },
   props: {
-    header: String,
+    
   },
   mounted() {
     console.log(this.products, "prrrrrooo");

@@ -20,23 +20,18 @@
             >
               <LegendItem
                 imgSrc="https://images.pexels.com/photos/5556305/pexels-photo-5556305.jpeg"
-                offer="This is Offer Two"
               />
               <LegendItem
                 imgSrc="https://res.cloudinary.com/thykingdoncome/image/upload/v1613049968/pexels-photo-5625061_ul2apu.jpg"
-                offer="This is Offer Three"
               />
               <LegendItem
                 imgSrc="https://res.cloudinary.com/thykingdoncome/image/upload/v1613049946/pexels-photo-5926239_p9bxjf.jpg"
-                offer="This is Offer Four"
               />
               <LegendItem
                 imgSrc="https://res.cloudinary.com/thykingdoncome/image/upload/v1613049959/pexels-photo-5632366_alrieh.jpg"
-                offer="This is Offer Five"
               />
               <LegendItem
                 imgSrc="https://res.cloudinary.com/thykingdoncome/image/upload/v1613050026/pexels-photo-1086711_tt4syj.jpg"
-                offer="This is Offer Six"
               />
             </agile>
           </div>
@@ -46,7 +41,7 @@
           <div x-data="{ cartOpen: false , isOpen: false }" class="bg-white">
             <main class="my-8">
               <div class="container mx-auto px-6">
-                <h3 class="text-gray-700 text-2xl font-medium">
+                <h3 v-if="products.length > 0" class="text-gray-700 text-2xl font-medium">
                   PRODUCT MERCHANTS
                 </h3>
 
@@ -63,7 +58,7 @@
               </div>
 
               <div class="container mx-auto px-6 mt-20">
-                <h3 class="text-gray-700 text-2xl font-medium">
+                <h3 v-if="services.length !== 0" class="text-gray-700 text-2xl font-medium">
                   SERVICE MERCHANTS
                 </h3>
 
